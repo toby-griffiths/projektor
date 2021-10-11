@@ -17,6 +17,9 @@ services:
       target: api_platform_pwa_dev
     volumes:
       - ./pwa:/usr/src/pwa:rw,cached
+    command:
+      - yarn
+      - dev
 
   caddy:
     volumes:
